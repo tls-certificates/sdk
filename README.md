@@ -4,8 +4,6 @@ tls-certificates/sdk
 
 [![Build Status](https://travis-ci.com/tls-certificates/sdk.svg?branch=master)](https://travis-ci.com/tls-certificates/sdk)
 
-[获取](https://www.TlsCertificates.com.cn/dashboard/api-credentials) `AccessKey` 秘钥对.
-
 此SDK包仅面向开发者提供支持，若您是分销商，您可以需要:
 - [TlsCertificates Module for WHMCS]()
 - [TlsCertificates Module for HostBill]()
