@@ -1,20 +1,20 @@
-<h1><p align="center"><img src="https://www.quantumca.com.cn/assets/logo/logo_dark_en.svg" width="450" style="width: 450px;"></p></h1>
+tls-certificates/sdk
 
-这是 [量子认证](https://www.quantumca.com.cn) 开放API的 PHP SDK.
+这是 TLS certificates 开放API的 PHP SDK.
 
-[![Build Status](https://travis-ci.com/quantumca/sdk.svg?branch=master)](https://travis-ci.com/quantumca/sdk)
+[![Build Status](https://travis-ci.com/tls-certificates/sdk.svg?branch=master)](https://travis-ci.com/tls-certificates/sdk)
 
-[获取](https://www.quantumca.com.cn/dashboard/api-credentials) `AccessKey` 秘钥对.
+[获取](https://www.TlsCertificates.com.cn/dashboard/api-credentials) `AccessKey` 秘钥对.
 
 此SDK包仅面向开发者提供支持，若您是分销商，您可以需要:
-- [QuantumCA Module for WHMCS]()
-- [QuantumCA Module for HostBill]()
-- [QuantumCA Module for 宝塔(bt.cn)]()
+- [TlsCertificates Module for WHMCS]()
+- [TlsCertificates Module for HostBill]()
+- [TlsCertificates Module for 宝塔(bt.cn)]()
 
 ## 安装
 
 ```bash
-composer require quantumca/sdk -vvv
+composer require tls-certificates/sdk -vvv
 ```
 
 ## 使用
@@ -22,7 +22,7 @@ composer require quantumca/sdk -vvv
 ```php
 <?php
 
-use QuantumCA\Sdk\Client;
+use TlsCertificates\Sdk\Client;
 
 require __DIR__ . '/../vendor/autoload.php';
 

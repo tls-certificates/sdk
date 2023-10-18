@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Scheme;
+namespace TlsCertificates\Sdk\Scheme;
 
 abstract class AbstractScheme
 {

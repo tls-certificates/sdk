@@ -1,9 +1,9 @@
 <?php
 
-namespace QuantumCA\Sdk\Scheme;
+namespace TlsCertificates\Sdk\Scheme;
 
 /**
- * @property \QuantumCA\Sdk\Scheme\ProductList\ProductListDataProductsItem[] $products
+ * @property \TlsCertificates\Sdk\Scheme\ProductList\ProductListDataProductsItem[] $products
  *
  * @link https://www.digital-sign.com.cn/api/product-list
  */

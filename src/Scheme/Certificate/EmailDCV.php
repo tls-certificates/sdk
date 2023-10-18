@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Scheme\Certificate;
+namespace TlsCertificates\Sdk\Scheme\Certificate;
 
 /**
  * @property EmailDCVDetail $email

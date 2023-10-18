@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Scheme;
+namespace TlsCertificates\Sdk\Scheme;
 
 /**
  * 订单退款格式

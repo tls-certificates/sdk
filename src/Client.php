@@ -1,19 +1,19 @@
 <?php
 
-namespace QuantumCA\Sdk;
+namespace TlsCertificates\Sdk;
 
 use GuzzleHttp\Client as GuzzleHttpClient;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\RequestOptions;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
-use QuantumCA\Sdk\Exceptions\DoNotHavePrivilegeException;
-use QuantumCA\Sdk\Exceptions\InsufficientBalanceException;
-use QuantumCA\Sdk\Exceptions\RequestException;
-use QuantumCA\Sdk\Resources\Order;
-use QuantumCA\Sdk\Resources\Product;
+use TlsCertificates\Sdk\Exceptions\DoNotHavePrivilegeException;
+use TlsCertificates\Sdk\Exceptions\InsufficientBalanceException;
+use TlsCertificates\Sdk\Exceptions\RequestException;
+use TlsCertificates\Sdk\Resources\Order;
+use TlsCertificates\Sdk\Resources\Product;
 
-use QuantumCA\Sdk\Traits\SignTrait;
+use TlsCertificates\Sdk\Traits\SignTrait;
 
 /**
  * @method mixed get($uri, $parameters = [])
@@ -23,11 +23,11 @@ class Client
 {
     use SignTrait;
 
-    const ORIGIN_API = 'https://ca.quantumca.com.cn/api/v1';
+    const ORIGIN_API = 'https://api.orion.pki.plus/api/v1';
 
-    const ORIGIN_API_STAGING = 'https://staging.quantumca.com.cn/api/v1';
+    const ORIGIN_API_STAGING = 'https://api.staging.pki.plus/api/v1';
 
-    const ORIGIN_API_DEV = 'https://dev.quantumca.limited/api/v1';
+    const ORIGIN_API_DEV = 'https://api.dev.pki.plus/api/v1';
 
     const CODE_EXCEPTION_MAP = [
         'INSUFFICIENT_BALANCE' => InsufficientBalanceException::class,
@@ -91,7 +91,7 @@ class Client
      *
      * @param string $method GET、POST
      * @param array $arguments 第一个参数为API的路径，第二个参数为业务参数
-     * @return \QuantumCA\Sdk\Response\Interfaces\BaseResponse
+     * @return \TlsCertificates\Sdk\Response\Interfaces\BaseResponse
      */
     public function __call($method, $arguments = [])
     {

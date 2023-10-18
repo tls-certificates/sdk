@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantumCA\Sdk\Test;
+namespace TlsCertificates\Sdk\Test;
 
-use QuantumCA\Sdk\Requests\CertificateReissueRequest;
+use TlsCertificates\Sdk\Requests\CertificateReissueRequest;
 
 final class ReissueCertificateTest extends TestCase
 {
@@ -10,9 +10,8 @@ final class ReissueCertificateTest extends TestCase
     {
         $domain = 'testapi.staging.digital-sign.com.cn';
         $request = new CertificateReissueRequest();
-        $request->QuantumCA_id = $_SERVER['QuantumCA_ORDER_ID'];
+        $request->tlscertificates_id = $_SERVER['TLSCERTIFICATES_ORDER_ID'];
         $request->csr = $this->csr();
-        $request->period = 'Quarterly';
         $request->contact_email = 'xiaohui.lam@e.hexdata.cn';
         $request->domain_dcv = [
             $domain => 'dns',
@@ -24,7 +23,7 @@ final class ReissueCertificateTest extends TestCase
 
         }
 
-        $this->assertObjectHasAttribute('QuantumCA_id', $result);
+        $this->assertObjectHasAttribute('tlscertificates_id', $result);
         $this->assertObjectHasAttribute('cost', $result);
         $this->assertObjectHasAttribute('status', $result);
         $this->assertObjectHasAttribute('dcv', $result);

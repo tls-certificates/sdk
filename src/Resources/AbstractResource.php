@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantumCA\Sdk\Resources;
+namespace TlsCertificates\Sdk\Resources;
 
-use QuantumCA\Sdk\Client;
+use TlsCertificates\Sdk\Client;
 
 abstract class AbstractResource
 {

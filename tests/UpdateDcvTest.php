@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantumCA\Sdk\Test;
+namespace TlsCertificates\Sdk\Test;
 
-use QuantumCA\Sdk\Requests\CertificateUpdateDcvRequest;
+use TlsCertificates\Sdk\Requests\CertificateUpdateDcvRequest;
 
 final class UpdateDcvTest extends TestCase
 {
@@ -10,7 +10,7 @@ final class UpdateDcvTest extends TestCase
     {
         $domain = 'testapi.staging.digital-sign.com.cn';
         $request = new CertificateUpdateDcvRequest();
-        $request->QuantumCA_id = $_SERVER['QuantumCA_ORDER_ID'];
+        $request->tlscertificates_id = $_SERVER['TlsCertificates_ORDER_ID'];
         $request->domain = $domain;
         $request->type = 'email';
         $request->value = 'admin@' . $domain;

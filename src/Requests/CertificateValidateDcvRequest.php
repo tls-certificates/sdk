@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Requests;
+namespace TlsCertificates\Sdk\Requests;
 
 /**
  * 证书查询接口请求

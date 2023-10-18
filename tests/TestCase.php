@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantumCA\Sdk\Test;
+namespace TlsCertificates\Sdk\Test;
 
-use QuantumCA\Sdk\Client;
+use TlsCertificates\Sdk\Client;
 use PHPUnit\Framework\TestCase as AbstractTestCase;
 
 abstract class TestCase extends AbstractTestCase
@@ -10,13 +10,13 @@ abstract class TestCase extends AbstractTestCase
     /**
      * 获取 SDK 实例
      *
-     * @return \QuantumCA\Sdk\Client
+     * @return \TlsCertificates\Sdk\Client
      */
     public function sdk()
     {
-        $access_key_id = $_SERVER['QuantumCA_ACCESS_KEY_ID'];
-        $access_key_secret = $_SERVER['QuantumCA_ACCESS_KEY_SECRET'];
-        $api_origin = $_SERVER['QuantumCA_API_ORIGIN'];
+        $access_key_id = $_SERVER['TLSCERTIFICATES_ACCESS_KEY_ID'];
+        $access_key_secret = $_SERVER['TLSCERTIFICATES_ACCESS_KEY_SECRET'];
+        $api_origin = $_SERVER['TLSCERTIFICATES_API_ORIGIN'];
 
         $sdk = new Client($access_key_id, $access_key_secret, $api_origin);
         return $sdk;

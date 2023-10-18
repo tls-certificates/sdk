@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Scheme\ProductList;
+namespace TlsCertificates\Sdk\Scheme\ProductList;
 
 /**
  * @property float $Quarterly 季付价格

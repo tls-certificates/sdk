@@ -1,11 +1,11 @@
 <?php
 
-namespace QuantumCA\Sdk\Requests;
+namespace TlsCertificates\Sdk\Requests;
 
 /**
  * 重签证书请求
  *
- * @property string $quantum_id 必传,下单时返回的id
+ * @property string $tlscertificates_id 必传,下单时返回的id
  * @property string[] $domain_dcv 必传
  * @property string $csr 必传,客户上传的CSR
  * @property integer $renew OV/EV必传,是否为续费订单

@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Requests;
+namespace TlsCertificates\Sdk\Requests;
 
 /**
  * 购买证书请求

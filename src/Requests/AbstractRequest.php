@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Requests;
+namespace TlsCertificates\Sdk\Requests;
 
 use ArrayAccess;
 use ArrayObject;

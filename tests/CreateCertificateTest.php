@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantumCA\Sdk\Test;
+namespace TlsCertificates\Sdk\Test;
 
-use QuantumCA\Sdk\Requests\CertificateCreateRequest;
+use TlsCertificates\Sdk\Requests\CertificateCreateRequest;
 
 final class CreateCertificateTest extends TestCase
 {
@@ -23,7 +23,7 @@ final class CreateCertificateTest extends TestCase
         $request->notify_url = 'https://partner.app/notify';
 
         $result = $this->sdk()->order->certificateCreate($request);
-        $this->assertObjectHasAttribute('QuantumCA_id', $result);
+        $this->assertObjectHasAttribute('tlscertificates_id', $result);
         $this->assertObjectHasAttribute('cost', $result);
         $this->assertObjectHasAttribute('status', $result);
         $this->assertObjectHasAttribute('dcv', $result);

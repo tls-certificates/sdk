@@ -1,14 +1,14 @@
 <?php
 
-namespace QuantumCA\Sdk\Resources;
+namespace TlsCertificates\Sdk\Resources;
 
-use QuantumCA\Sdk\Requests\CertificateAddSanRequest;
-use QuantumCA\Sdk\Requests\CertificateCreateRequest;
-use QuantumCA\Sdk\Requests\CertificateDetailRequest;
-use QuantumCA\Sdk\Requests\CertificateRefundRequest;
-use QuantumCA\Sdk\Requests\CertificateReissueRequest;
-use QuantumCA\Sdk\Requests\CertificateUpdateDcvRequest;
-use QuantumCA\Sdk\Requests\CertificateValidateDcvRequest;
+use TlsCertificates\Sdk\Requests\CertificateAddSanRequest;
+use TlsCertificates\Sdk\Requests\CertificateCreateRequest;
+use TlsCertificates\Sdk\Requests\CertificateDetailRequest;
+use TlsCertificates\Sdk\Requests\CertificateRefundRequest;
+use TlsCertificates\Sdk\Requests\CertificateReissueRequest;
+use TlsCertificates\Sdk\Requests\CertificateUpdateDcvRequest;
+use TlsCertificates\Sdk\Requests\CertificateValidateDcvRequest;
 
 class Order extends AbstractResource
 {
@@ -16,7 +16,7 @@ class Order extends AbstractResource
      * 证书下单接口
      *
      * @param CertificateCreateRequest $certificateCreateRequest
-     * @return \QuantumCA\Sdk\Scheme\CertificateDetailScheme
+     * @return \TlsCertificates\Sdk\Scheme\CertificateDetailScheme
      *
      * @link https://www.digital-sign.com.cn/api/cert-issue
      */
@@ -30,7 +30,7 @@ class Order extends AbstractResource
       * 证书重签接口
       *
       * @param CertificateReissueRequest $certificateReissueRequest
-      * @return \QuantumCA\Sdk\Scheme\CertificateDetailScheme
+      * @return \TlsCertificates\Sdk\Scheme\CertificateDetailScheme
       *
       * @link https://www.digital-sign.com.cn/api/cert-reissue
       */
@@ -43,7 +43,7 @@ class Order extends AbstractResource
      * 证书查询接口
      *
      * @param CertificateDetailRequest $certificateDetailRequest
-     * @return \QuantumCA\Sdk\Scheme\CertificateDetailScheme
+     * @return \TlsCertificates\Sdk\Scheme\CertificateDetailScheme
      *
      * @link https://www.digital-sign.com.cn/api/cert-detail
      */
@@ -56,7 +56,7 @@ class Order extends AbstractResource
      * 证书更新 DCV 接口
      *
      * @param CertificateUpdateDcvRequest $certificateUpdateDcvRequest
-     * @return \QuantumCA\Sdk\Scheme\Certificate\DnsDCV[]|\QuantumCA\Sdk\Scheme\Certificate\EmailDCV[]|\QuantumCA\Sdk\Scheme\Certificate\HttpDCV[]|\QuantumCA\Sdk\Scheme\Certificate\HttpsDCV[]
+     * @return \TlsCertificates\Sdk\Scheme\Certificate\DnsDCV[]|\TlsCertificates\Sdk\Scheme\Certificate\EmailDCV[]|\TlsCertificates\Sdk\Scheme\Certificate\HttpDCV[]|\TlsCertificates\Sdk\Scheme\Certificate\HttpsDCV[]
      *
      * @link https://www.digital-sign.com.cn/api/cert-update-dcv
      */
@@ -69,7 +69,7 @@ class Order extends AbstractResource
      * 证书提交检查DCV接口
      *
      * @param CertificateValidateDcvRequest $certificateValidateDcvRequest
-     * @return \QuantumCA\Sdk\Scheme\CertificateDetailScheme
+     * @return \TlsCertificates\Sdk\Scheme\CertificateDetailScheme
      *
      * @link https://www.digital-sign.com.cn/api/cert-validate-dcv
      */
@@ -82,7 +82,7 @@ class Order extends AbstractResource
      * 添加DCV接口
      *
      * @param CertificateAddSanRequest $certificateAddSanRequest
-     * @return \QuantumCA\Sdk\Scheme\CertificateAddSanScheme
+     * @return \TlsCertificates\Sdk\Scheme\CertificateAddSanScheme
      *
      * @link https://www.digital-sign.com.cn/api/cert-add-san
      */
@@ -95,7 +95,7 @@ class Order extends AbstractResource
      * 退款
      *
      * @param CertificateRefundRequest $certificateRefundRequest
-     * @return \QuantumCA\Sdk\Scheme\CertificateRefundScheme
+     * @return \TlsCertificates\Sdk\Scheme\CertificateRefundScheme
      *
      * @link https://www.digital-sign.com.cn/api/cert-refund
      */

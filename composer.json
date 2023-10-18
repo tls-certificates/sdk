@@ -1,24 +1,18 @@
 {
-    "name": "quantumca/sdk",
-    "description": "The php sdk for QuantumCA.",
+    "name": "tls-certificates/sdk",
+    "description": "The php sdk for TLS Certificates.",
     "type": "library",
-    "authors": [
-        {
-            "name": "tech",
-            "email": "develop@quantumca.com.cn"
-        }
-    ],
     "require": {
         "guzzlehttp/guzzle": ">4.0"
     },
     "autoload": {
         "psr-4": {
-            "QuantumCA\\Sdk\\": "src/"
+            "TlsCertificates\\Sdk\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "QuantumCA\\Sdk\\Test\\": "tests/"
+            "TlsCertificates\\Sdk\\Test\\": "tests/"
         }
     },
     "license": "MIT",

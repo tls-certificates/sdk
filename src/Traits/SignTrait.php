@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantumCA\Sdk\Traits;
+namespace TlsCertificates\Sdk\Traits;
 
 /**
  * 签名部分

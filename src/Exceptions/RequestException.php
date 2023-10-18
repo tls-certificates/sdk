@@ -1,5 +1,5 @@
 <?php
-namespace QuantumCA\Sdk\Exceptions;
+namespace TlsCertificates\Sdk\Exceptions;
 
 use Exception;
 
